@@ -46,11 +46,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
-    gap: 12px;
+    gap: 24px;
 }
 .header__brand .icon {
-    width: 96px;
-    height: 96px;
+    width: 7em;
+    height: 7em;
     border-radius: 50%;
     box-shadow: 0 0 6px var(--shadow);
 }
