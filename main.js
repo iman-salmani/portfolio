@@ -27,7 +27,7 @@ function createWorkElement(work) {
         <img class="icon" src="${work.icon}">
         <h3 class="name">${work.name}</h3>
     </nav>
-    <p class="card__desc">${work.description}</p>
+    <p class="card__description">${work.description}</p>
     <nav class="card__skills">${skills}</nav>`.trim();
   return card;
 }

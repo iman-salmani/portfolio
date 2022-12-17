@@ -1,5 +1,5 @@
 :root {
-    --shadow: #e5e5e5
+    --shadow: #ddd
 }
 @font-face {
     font-family: Estedad;
@@ -15,7 +15,7 @@ body {
     font-size: 16px;
     direction: rtl;
     width: 100%;
-    max-width: 720px;
+    max-width: 1024px;
 }
 
 /* Rewrite initial styles */
@@ -67,6 +67,9 @@ header {
 }
 
 /* Cards */
+.cards {
+    margin-bottom: 32px;
+}
 .cards__title {
     font-size: 1.5em;
 }
@@ -119,13 +122,13 @@ header {
     width: 320px;
     height: 100%;
     border-radius: 12px;
-    box-shadow: 0 0 3px var(--shadow);
+    box-shadow: 0 0 1px var(--shadow);
 }
 .card__image {
     width: 100%;
     height: 512px;
     border-radius: 12px 12px 0 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid var(--shadow);
 }
 .card__head {
     display: flex;
@@ -145,7 +148,7 @@ header {
 .card__head .name{
     font-size: 1.2em;
 }
-.card__desc {
+.card__description {
     padding: 0 12px;
     height: 87px;
 }
@@ -195,6 +198,41 @@ header {
     background-color: #3b86e2;
     color: white;
 }
+
+/* Tiles */
+.tiles {
+    margin-bottom: 32px;
+}
+.tiles__title {
+    font-size: 1.5em;
+}
+.tiles__description {
+    font-size: 1.1em;
+    margin-bottom: 24px;
+}
+.tile {
+    margin-bottom: 24px;
+}
+.tile__head {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 9px;
+}
+.tile__head .icon {
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+    background-color: #777;
+}
+.tile__head .name {
+    font-size: 1.2em;
+}
+.tile__description a {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
 /* Responsive */
 @media screen and (max-width:480px) {
     body {
