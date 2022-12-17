@@ -1,15 +1,5 @@
 const worksList = document.getElementById("works");
 
-// const worksRequest = new XMLHttpRequest();
-// worksRequest.onload = () => {
-//   console.log(this.responseText);
-//   const worksData = JSON.parse(this.responseText).works;
-//   console.log(worksData);
-
-//   addArrows();
-// };
-// worksRequest.open("GET", "/db/works.json");
-// worksRequest.send();
 fetch("/db/works.json")
   .then((response) => response.json())
   .then((data) => {
@@ -18,12 +8,11 @@ fetch("/db/works.json")
       worksList.appendChild(createWorkElement(work));
     });
 
-    addArrows();
+    addScrollEvents();
   });
 
 function createWorkElement(work) {
   const card = document.createElement("li");
-  console.log(1);
   card.classList.add("card");
 
   let skills = "";
@@ -43,7 +32,7 @@ function createWorkElement(work) {
   return card;
 }
 
-function addArrows() {
+function addScrollEvents() {
   const cardsContainers = [
     ...document.getElementsByClassName("cards__container"),
   ];
@@ -57,6 +46,19 @@ function addArrows() {
       container.getBoundingClientRect().width / 320
     );
     let index = 0;
+
+    let touchStart = 0;
+    list.addEventListener("touchstart", (event) => {
+      touchStart = event.changedTouches[0].screenX;
+    });
+    list.addEventListener("touchend", (event) => {
+      const touchChange = touchStart - event.changedTouches[0].screenX;
+      if (touchChange > 0 && previous.style.display !== "none") {
+        previous.click();
+      } else if (touchChange < 0 && next.style.display !== "none") {
+        next.click();
+      }
+    });
 
     if (0 === count - showable_count) {
       next.style.display = "none";
