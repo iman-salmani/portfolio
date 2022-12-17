@@ -1,0 +1,57 @@
+{
+    "works": [
+        {
+            "name": "پلنر",
+            "icon": "/db/img/planner_icon.png",
+            "image": "/db/img/planner.png",
+            "description": "برنامه لینوکسی برای برنامه ریزی شخصی و سازمانی (البته هنوز نه ⏲️)",
+            "skills": [
+                "Python",
+                "GTK"
+            ]
+        },
+        {
+            "name": "پنل پیامک",
+            "icon": "",
+            "image": "/db/img/sms_panel.png",
+            "description": "ارسال پیامک با تحلیل خودکار شماره ها",
+            "skills": [
+                "Python",
+                "Fastapi",
+                "JavaScript"
+            ]
+        },
+        {
+            "name": "اندیشکده طب اسلامی",
+            "icon": "/db/img/teb_university_icon.png",
+            "image": "/db/img/teb_university.png",
+            "description": "سامانه برای اطلاع از برنامه کلاسی، آزمون، پشتیبانی و پرداخت شهریه",
+            "skills": [
+                "Python",
+                "Django",
+                "PostgreSQL"
+            ]
+        },
+        {
+            "name": "برنامه اندرویدی مکتب اسلامی",
+            "icon": "/db/img/maktab_eslami_icon.png",
+            "image": "/db/img/maktab_eslami.jpeg",
+            "description": "این برنامه برای دسترسی ساده تر به مقالات، گالری و اطلاع رسانی استفاده میشه",
+            "skills": [
+                "Android",
+                "Dart",
+                "Flutter"
+            ]
+        },
+        {
+            "name": "نوار",
+            "icon": "",
+            "image": "/db/img/navar.png",
+            "description": "تسک باری که برای سیستم قدیمیه مدرسه نوشتم 😅",
+            "skills": [
+                "Python",
+                "Tkiner"
+            ]
+        }
+    ]
+}
