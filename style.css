@@ -52,7 +52,7 @@ header {
     width: 96px;
     height: 96px;
     border-radius: 50%;
-    background-color: #eee;
+    box-shadow: 0 0 6px var(--shadow);
 }
 .header__brand .title {
     font-size: 2em;
