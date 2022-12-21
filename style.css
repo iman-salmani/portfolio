@@ -1,21 +1,21 @@
 :root {
-    --shadow: #ddd
+  --shadow: #ddd;
 }
 @font-face {
-    font-family: Estedad;
-    src: url('font/Estedad[KSHD\,wght].ttf');
+  font-family: Estedad;
+  src: url("font/Estedad[KSHD\,wght].ttf");
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 body {
-    padding: 0 12px;
-    margin: 0 auto;
-    font-family: Estedad;
-    font-size: 16px;
-    direction: rtl;
-    width: 100%;
-    max-width: 1024px;
+  padding: 0 12px;
+  margin: 0 auto;
+  font-family: Estedad;
+  font-size: 16px;
+  direction: rtl;
+  width: 100%;
+  max-width: 1024px;
 }
 
 /* Rewrite initial styles */
@@ -23,219 +23,219 @@ h1,
 h2,
 h3,
 h4 {
-    margin: 0;
+  margin: 0;
 }
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 p {
-    margin: 0;
+  margin: 0;
 }
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 /* Header */
 header {
-    margin: 32px 0;
+  margin: 32px 0;
 }
 .header__brand {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 24px;
 }
 .header__brand .icon {
-    width: 7em;
-    height: 7em;
-    border-radius: 50%;
-    box-shadow: 0 0 6px var(--shadow);
+  width: 7em;
+  height: 7em;
+  border-radius: 50%;
+  box-shadow: 0 0 6px var(--shadow);
 }
 .header__brand .title {
-    font-size: 2em;
-    color: #000;
+  font-size: 2em;
+  color: #000;
 }
 .header__description {
-    font-size: 1.3em;
-    margin-top: 12px;
+  font-size: 1.3em;
+  margin-top: 12px;
 }
 .header__description .emoji {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 /* Cards */
 .cards {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .cards__title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .cards__container {
-    position: relative;
-    overflow-x: hidden;
-    height: 720px;
-    width: calc(100% + 24px);
-    margin: 0 -12px;
+  position: relative;
+  overflow-x: hidden;
+  height: 720px;
+  width: calc(100% + 24px);
+  margin: 0 -12px;
 }
 .cards__container .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 11;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 11;
 
-    width: 48px;
-    height: 48px;
-    padding: 6px;
-    border-radius: 50%;
-    background-color: #fff;
-    box-shadow: 0 0 2px var(--shadow);
-    cursor: pointer;
+  width: 48px;
+  height: 48px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px var(--shadow);
+  cursor: pointer;
 }
 .cards__container .arrow--next {
-    left: 5px;
+  left: 5px;
 }
 .cards__container .arrow--previous {
-    right: 5px;    /* for list padding 12 */
-    display: none;
+  right: 5px; /* for list padding 12 */
+  display: none;
 }
 .cards__container .list {
-    position: absolute;
-    top: 0;
-    right: 12px;
-    z-index: 10;
+  position: absolute;
+  top: 0;
+  right: 12px;
+  z-index: 10;
 
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
 
-    width: auto;
-    height: 100%;
-    padding: 12px 0;
-    transition: 300ms;
+  width: auto;
+  height: 100%;
+  padding: 12px 0;
+  transition: 300ms;
 }
 .card {
-    position: relative;
-    width: 320px;
-    height: 100%;
-    border-radius: 12px;
-    box-shadow: 0 0 1px var(--shadow);
+  position: relative;
+  width: 320px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 1px var(--shadow);
 }
 .card__image {
-    width: 100%;
-    height: 512px;
-    border-radius: 12px 12px 0 0;
-    border-bottom: 1px solid var(--shadow);
+  width: 100%;
+  height: 512px;
+  border-radius: 12px 12px 0 0;
+  border-bottom: 1px solid var(--shadow);
 }
 .card__head {
-    display: flex;
-    align-items: center;
-    justify-content: start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 .card__head .icon {
-    width: 48px;
-    height: 48px;
-    margin-right: 12px;
-    margin-left: 6px;
+  width: 48px;
+  height: 48px;
+  margin-right: 12px;
+  margin-left: 6px;
 }
 .card__head .icon[src=""] {
-    width: 0;
-    margin-left: 0;
+  width: 0;
+  margin-left: 0;
 }
-.card__head .name{
-    font-size: 1.2em;
+.card__head .name {
+  font-size: 1.2em;
 }
 .card__description {
-    padding: 0 12px;
-    height: 87px;
+  padding: 0 12px;
+  height: 87px;
 }
 .card__skills {
-    position: absolute;
-    bottom: 12px;
-    right: 12px;
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
 }
 .card__skills .skill {
-    display: inline-block;
-    margin-left: 6px;
-    border-radius: 6px;
-    padding: 6px 12px;
-    background-color: #f5f5f5;
+  display: inline-block;
+  margin-left: 6px;
+  border-radius: 6px;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
 }
 .card__skills .skill.android {
-    background-color: #3bd482;
-    color: white;
+  background-color: #3bd482;
+  color: white;
 }
 .card__skills .skill.dart {
-    background-color: #055a9c;
-    color: white;
+  background-color: #055a9c;
+  color: white;
 }
 .card__skills .skill.flutter {
-    background-color: #51bff0;
+  background-color: #51bff0;
 }
 .card__skills .skill.python {
-    background-color: #316b9a;
-    color: white;
+  background-color: #316b9a;
+  color: white;
 }
 .card__skills .skill.fastapi {
-    background-color: #019587;
-    color: white;
+  background-color: #019587;
+  color: white;
 }
 .card__skills .skill.javascript {
-    background-color: #fcdc00;
+  background-color: #fcdc00;
 }
 .card__skills .skill.django {
-    background-color: #0C4B33;
-    color: white;
+  background-color: #0c4b33;
+  color: white;
 }
 .card__skills .skill.postgresql {
-    background-color: #336791;
-    color: white;
+  background-color: #336791;
+  color: white;
 }
 .card__skills .skill.gtk {
-    background-color: #3b86e2;
-    color: white;
+  background-color: #3b86e2;
+  color: white;
 }
 
 /* Tiles */
 .tiles {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 .tiles__title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .tiles__description {
-    font-size: 1.1em;
-    margin-bottom: 24px;
+  font-size: 1.1em;
+  margin-bottom: 24px;
 }
 .tile {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 .tile__head {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 9px;
 }
 .tile__head .icon {
-    width: 1.2em;
-    height: 1.2em;
-    border-radius: 50%;
-    background-color: #777;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  background-color: #777;
 }
 .tile__head .name {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 .tile__description a {
-    font-weight: 600;
-    text-decoration: underline;
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 /* Responsive */
-@media screen and (max-width:480px) {
-    body {
-        font-size:  14px;
-    }
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
 }
